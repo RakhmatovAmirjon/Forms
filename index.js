@@ -1,10 +1,10 @@
 let saveChangesButton = document.getElementById("save_changes");
-let importantInputs = document.querySelectorAll("#important");
+let important_inputs = document.getElementById("important");
 
 saveChangesButton.onclick = () => {
   let emptyInputCount = 0;
 
-  for (let input of importantInputs) {
+  for (let input of important_inputs) {
     if (input.value === "") {
       input.style.border = "2px solid red";
       input.parentElement.querySelector(".texting").style.color = "red";
